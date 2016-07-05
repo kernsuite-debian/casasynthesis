@@ -1,7 +1,7 @@
 Source: casasynthesis
 Priority: optional
 Maintainer: Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>
-Build-Depends: debhelper (>= 8.0.0), cmake, libcasacore2-dev (>= 2.0.3), gfortran, libboost-dev,
+Build-Depends: debhelper (>= 8.0.0), cmake, casacore-dev (>= 2.0.3), gfortran, libboost-dev,
  libboost-regex-dev, libboost-program-options-dev, libboost-filesystem-dev,
  libboost-thread-dev, libboost-serialization-dev, libboost-system-dev, libcfitsio3-dev,
  libx11-dev, libfftw3-dev, libblas-dev, liblapack-dev, libgsl0-dev, pkg-config,
