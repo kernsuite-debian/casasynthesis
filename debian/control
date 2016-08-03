@@ -29,7 +29,7 @@ Build-Depends: casacore-dev (>= 2.0.3),
                pkg-config,
                wcslib-dev
 Standards-Version: 3.9.8
-Section: libs
+Section: science
 Homepage: https://github.com/radio-astro/casasynthesis
 Vcs-Git: https://anonscm.debian.org/git/debian-astro/packages/casasynthesis.git
 Vcs-Browser: https://anonscm.debian.org/cgit/debian-astro/packages/casasynthesis.git
@@ -37,7 +37,7 @@ Vcs-Browser: https://anonscm.debian.org/cgit/debian-astro/packages/casasynthesis
 Package: libcasasynthesis-dev
 Section: libdevel
 Architecture: any
-Depends: libcasasynthesis1 (= ${binary:Version})
+Depends: ${misc:Depends}, libcasasynthesis1 (= ${binary:Version})
 Description: CASA modules needed for processing synthesis data (development files)
  Aperture synthesis or synthesis imaging is a type of interferometry that
  mixes signals from a collection of telescopes to produce images having the
