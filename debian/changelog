@@ -1,23 +1,5 @@
-casasynthesis (0.1-1kern2) xenial; urgency=medium
+casasynthesis (0.1-1) UNRELEASED; urgency=low
 
-  * bump version number to get accepted by PPA
+  * Initial Debian release. Closes: #XXXXXX
 
- -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Wed, 06 Jul 2016 10:34:18 +0200
-
-casasynthesis (0.1-1kern1) xenial; urgency=medium
-
-  * first kern release
-
- -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Tue, 05 Jul 2016 14:52:34 +0200
-
-casasynthesis (0.1-2trusty) trusty; urgency=medium
-
-  * fix package names
-
- -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Fri, 09 Oct 2015 16:01:15 +0200
-
-casasynthesis (0.1-1trusty) trusty; urgency=low
-
-  * Initial release
-
- -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Fri, 09 Oct 2015 11:54:43 +0200
+ -- Gijs Molenaar <gijs@pythonic.nl>  Wed, 06 Jul 2016 10:34:18 +0200
