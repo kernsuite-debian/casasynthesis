@@ -1,9 +1,11 @@
 Source: casasynthesis
 Priority: optional
-Maintainer: Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>
+Maintainer: Debian Astro Team <debian-astro-maintainers@lists.alioth.debian.org>
+Uploaders: Gijs Molenaar <gijs@pythonic.nl>,
+ Ole Streicher <olebole@debian.org>
 Build-Depends: casacore-dev (>= 2.0.3),
                cmake,
-               debhelper (>= 8.0.0),
+               debhelper (>= 9),
                gfortran,
                libblas-dev,
                libboost-dev,
@@ -20,8 +22,8 @@ Build-Depends: casacore-dev (>= 2.0.3),
                libgsl0-dev,
                liblapack-dev,
                libncurses5-dev,
-               libpgsbox-dev,
                libreadline-dev,
+               wcslib-dev,
                libx11-dev,
                libxml2-dev,
                pkg-config
