@@ -19,28 +19,53 @@ Build-Depends: casacore-dev (>= 2.0.3),
                libdbus-1-dev,
                libdbus-c++-dev,
                libfftw3-dev,
+               giza-dev,
                libgsl0-dev,
                liblapack-dev,
                libncurses5-dev,
                libreadline-dev,
-               wcslib-dev,
                libx11-dev,
                libxml2-dev,
-               pkg-config
-Standards-Version: 3.9.4
+               pkg-config,
+               wcslib-dev
+Standards-Version: 3.9.8
 Section: libs
 Homepage: https://github.com/radio-astro/casasynthesis
+Vcs-Git: https://anonscm.debian.org/git/debian-astro/packages/casasynthesis.git
+Vcs-Browser: https://anonscm.debian.org/cgit/debian-astro/packages/casasynthesis.git
 
 Package: libcasasynthesis-dev
 Section: libdevel
 Architecture: any
 Depends: libcasasynthesis1 (= ${binary:Version})
-Description: The synthesis CASA 4.4 submodule as a standalone project
- development headers only
+Description: CASA modules needed for processing synthesis data (development files)
+ Aperture synthesis or synthesis imaging is a type of interferometry that
+ mixes signals from a collection of telescopes to produce images having the
+ same angular resolution as an instrument the size of the entire
+ collection. At each separation and orientation, the lobe-pattern of the
+ interferometer produces an output which is one component of the Fourier
+ transform of the spatial distribution of the brightness of the observed
+ object. The image (or "map") of the source is produced from these
+ measurements. Astronomical interferometers are commonly used for
+ high-resolution optical, infrared, submillimetre and radio astronomy
+ observations.
+ .
+ This package contains the header files for development.
 
 Package: libcasasynthesis1
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: The synthesis CASA 4.4 submodule as a standalone project
- library files only
+Description: CASA modules needed for processing synthesis data (shared lib)
+ Aperture synthesis or synthesis imaging is a type of interferometry that
+ mixes signals from a collection of telescopes to produce images having the
+ same angular resolution as an instrument the size of the entire
+ collection. At each separation and orientation, the lobe-pattern of the
+ interferometer produces an output which is one component of the Fourier
+ transform of the spatial distribution of the brightness of the observed
+ object. The image (or "map") of the source is produced from these
+ measurements. Astronomical interferometers are commonly used for
+ high-resolution optical, infrared, submillimetre and radio astronomy
+ observations.
+ .
+ This package contains the shared library.
