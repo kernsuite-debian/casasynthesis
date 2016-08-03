@@ -158,9 +158,11 @@ License: GPL-2+
 
 Files: atmosphere/test/*
  mstransform/apps/msuvbin/* mstransform/MSTransform/MSUVBin.cc
+ CMakeLists.txt */CMakeLists.txt
 Copyright: 2008 Bojan Nikolic <b.nikolic@mrao.cam.ac.uk>
  2008 Juan Pardo
  2014-2015 Associated Universities, Inc. Washington DC, USA.
+ 2010 European Southern Observatory
 License: GPL-3+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
