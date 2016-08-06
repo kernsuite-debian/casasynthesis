@@ -34,7 +34,7 @@ Homepage: https://github.com/radio-astro/casasynthesis
 Vcs-Git: https://anonscm.debian.org/git/debian-astro/packages/casasynthesis.git
 Vcs-Browser: https://anonscm.debian.org/cgit/debian-astro/packages/casasynthesis.git
 
-Package: libcasasynthesis-dev
+Package: casasynthesis-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, libcasasynthesis1 (= ${binary:Version})
