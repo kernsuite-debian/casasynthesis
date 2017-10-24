@@ -1,20 +1,20 @@
 Source: casasynthesis
 Priority: optional
-Maintainer: Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>
-Build-Depends: debhelper (>= 8.0.0), cmake, casacore-dev (>= 2.0.3), gfortran, libboost-dev,
+Maintainer: KERN packaging <packaging@kernsuite.info>
+Build-Depends: debhelper (>= 9.0.0), cmake, casacore-dev (>= 2.0.3), gfortran, libboost-dev,
  libboost-regex-dev, libboost-program-options-dev, libboost-filesystem-dev,
  libboost-thread-dev, libboost-serialization-dev, libboost-system-dev, libcfitsio3-dev,
  libx11-dev, libfftw3-dev, libblas-dev, liblapack-dev, libgsl0-dev, pkg-config,
  libxml2-dev, libncurses5-dev, libdbus-c++-dev, libdbus-1-dev, libreadline-dev,
  libpgsbox-dev
-Standards-Version: 3.9.4
+Standards-Version: 3.9.6
 Section: libs
 Homepage: https://github.com/radio-astro/casasynthesis
 
 Package: libcasasynthesis-dev
 Section: libdevel
 Architecture: any
-Depends: libcasasynthesis1 (= ${binary:Version})
+Depends: libcasasynthesis1 (= ${binary:Version}), ${misc:Depends} 
 Description: The synthesis CASA 4.4 submodule as a standalone project
  development headers only
 
