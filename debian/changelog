@@ -1,3 +1,10 @@
+casasynthesis (0.1-1kern4) xenial; urgency=medium
+
+  * make debian files mit
+  * cleanup and lintian
+
+ -- KERN packaging <packaging@kernsuite.info>  Tue, 24 Oct 2017 16:24:53 +0200
+
 casasynthesis (0.1-1kern3) xenial; urgency=medium
 
   * bump version number to force compile with casacore 2.2.0
