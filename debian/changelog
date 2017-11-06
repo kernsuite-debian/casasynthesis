@@ -1,3 +1,9 @@
+casasynthesis (0.1-1kern5) xenial; urgency=medium
+
+  * version bump to trigger build with casacore 2.4.0
+
+ -- KERN packaging <packaging@kernsuite.info>  Mon, 06 Nov 2017 18:49:41 +0200
+
 casasynthesis (0.1-1kern4) xenial; urgency=medium
 
   * make debian files mit
