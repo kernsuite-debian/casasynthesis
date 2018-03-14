@@ -3,10 +3,10 @@ Priority: optional
 Maintainer: KERN packaging <packaging@kernsuite.info>
 Build-Depends: debhelper (>= 9.0.0), cmake, casacore-dev (>= 2.0.3), gfortran, libboost-dev,
  libboost-regex-dev, libboost-program-options-dev, libboost-filesystem-dev,
- libboost-thread-dev, libboost-serialization-dev, libboost-system-dev, libcfitsio3-dev,
- libx11-dev, libfftw3-dev, libblas-dev, liblapack-dev, libgsl0-dev, pkg-config,
+ libboost-thread-dev, libboost-serialization-dev, libboost-system-dev, libcfitsio-dev,
+ libx11-dev, libfftw3-dev, libblas-dev, liblapack-dev, libgsl-dev, pkg-config,
  libxml2-dev, libncurses5-dev, libdbus-c++-dev, libdbus-1-dev, libreadline-dev,
- libpgsbox-dev
+ wcslib-dev, pgplot5
 Standards-Version: 3.9.6
 Section: libs
 Homepage: https://github.com/radio-astro/casasynthesis

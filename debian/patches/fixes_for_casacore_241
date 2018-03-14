@@ -1,0 +1,47 @@
+Description: Make compiling with casacore 2.4.1
+
+--- casasynthesis-0.1.orig/imageanalysis/IO/ImageFitterResults.cc
++++ casasynthesis-0.1/imageanalysis/IO/ImageFitterResults.cc
+@@ -271,13 +271,8 @@ String ImageFitterResults::fluxToString(
+ 
+ vector<String> ImageFitterResults::unitPrefixes(Bool includeCenti) {
+ 	if (_prefixes.empty()) {
+-#if defined(CXX11)
+ 		_prefixesWithCenti = std::vector<String> {"T","G","M","k","","c","m","u","n"};
+ 		_prefixes = std::vector<String> {"T","G","M","k","","m","u","n"};
+-#else
+-		_prefixesWithCenti = list_of("T")("G")("M")("k")("")("c")("m")("u")("n");
+-		_prefixes = list_of("T")("G")("M")("k")("")("m")("u")("n");
+-#endif
+ 	}
+ 	if (includeCenti) {
+ 		return _prefixesWithCenti;
+--- casasynthesis-0.1.orig/msvis/MSVis/MSMoments.h
++++ casasynthesis-0.1/msvis/MSVis/MSMoments.h
+@@ -175,7 +175,7 @@ public:
+    virtual ~MSMoments();
+    
+    // Assignment operator.
+-   MSMoments<T> &operator=(const MSMoments<T> &other); 
++   MSMoments<T> &operator=(MSMoments<T> &other); 
+  
+    // Change or Set the MS this MSMoments refers to.
+    Bool setNewMS(MeasurementSet& ms);
+--- casasynthesis-0.1.orig/msvis/MSVis/MSMoments.tcc
++++ casasynthesis-0.1/msvis/MSVis/MSMoments.tcc
+@@ -96,13 +96,13 @@ MSMoments<T>::~MSMoments()
+ }
+ 
+ template<class T> 
+-MSMoments<T>  &MSMoments<T>::operator=(const MSMoments<T> &other)
++MSMoments<T>  &MSMoments<T>::operator=(MSMoments<T> &other)
+ {
+   if ( this != &other) {
+ 
+     if ( ms_p != 0 ) 
+       delete ms_p ;
+-    ms_p = new MeasurementSet( other.ms_p ) ;
++    ms_p = new MeasurementSet( *other.ms_p ) ;
+     
+     os_p = other.os_p ;
+     showProgress_p = other.showProgress_p ;
